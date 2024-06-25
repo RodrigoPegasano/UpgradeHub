@@ -1,0 +1,68 @@
+/* DISPLAY */
+/* El display define el tipo de caja utilizada por el elemento */
+
+/* 1. display: inline */
+/* Es el valor por defecto. Expone al elemento en linea */
+div {
+    display: inline;
+}
+/* NO ADMITE PARÁMETROS: width, height, margin */
+
+/* 2. display: block */
+/* Expone como elemento de bloque */
+div {
+    display: block;
+}
+/* HACE QUE EL ELEMENTO OCUPE TODO EL ANCHO POSIBLE */
+
+/* 3. display: inline-block */
+/* Muestra el elemento en la misma linea (como el inline), pero acepta propiedades: width, height, margin */
+div {
+    display: inline-block;
+}
+
+/* 4. display: none */
+/* El elemento no se mostrará ni tendrá efecto en la estructura de la web */
+div {
+    display: none;
+}
+
+/* 5. display: flex */
+/* Expone como un elemento de bloque de tipo flexible */
+div {
+    display: flex;
+}
+/* SE UTILIZA PARA COLOCAR ELEMENTOS EN UNA MISMA FILA O COLUMNA */
+
+/* ____________________________________________________________________________________________________________________________________ */
+
+/* POSITION */
+/* Especifica qué método de posicionamiento es usado por el elemento */
+
+/* 1. position: static */
+/* Es el posicionamiento por defecto. Posiciona al elemento acorde al flujo de la web */
+div {
+    position: static;
+}
+/* NO PERMITE: top, right, bottom, left */
+
+/* 2. position: relative */
+/* Posiciona al elemento acorde al flujo de la web */
+div {
+    position: relative;
+}
+/* PERMITE: top, right, bottom, left */
+
+/* 3. position: absolute */
+/* Posiciona al elemento relativamente al primer padre con valor relative */
+div {
+    position: absolute;
+}
+/* PERMITE: top, right, bottom, left */
+
+/* 4. position: fixed */
+/* Posiciona fijo al elemento en alguno de los extremos de la página. El scroll de la pantalla no lo mueve */
+div {
+    position: fixed;
+}
+/* PERMITE: top, right, bottom, left */

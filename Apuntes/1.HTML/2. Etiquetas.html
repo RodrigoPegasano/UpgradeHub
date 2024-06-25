@@ -1,0 +1,126 @@
+<!-- Existen diferentes tipos de etiquetas que utilizamos dependiendo de lo que queremos agregar en nuestra página: -->
+
+<!-- ETIQUETA <title> -->
+<!-- Es el nombre que aparece en la pestaña de la web -->
+<title>Nombre de la página web</title>
+
+<!-- ETIQUETA DE ENCABEZADO -->
+<h1>Título más grande</h1>
+<h2>Titulo mas chico que el h1</h2>
+<h3>Titulo mas chico que el h2</h3>
+<h4>Titulo mas chico que el h3</h4>
+<h5>Titulo mas chico que el h4</h5>
+<h6>Titulo mas chico que el h5</h6>
+
+<!-- ETIQUETA DE PÁRRAFO -->
+<p>Contenido del párrafo aquí</p>
+
+<!-- ETIQUETA PARA ENLACES/HIPERENLACES -->
+<a href="el enlace debe ir aquí">Texto para clic e ir al enlace</a>
+
+<!-- Etiqueta para imágenes -->
+<img src="ruta de la imagen" alt="Nombre de la imagen">
+
+<!-- ETIQUETA <div> -->
+<!-- Se utiliza para representar una división o sección dentro de nuestra página -->
+<!-- Se muestra como un bloque y ocupa la altura necesaria según su contenido dentro y todo el ancho que pueda -->
+<div>   </div>
+
+<!-- ETIQUETA <span> -->
+<!-- Ocupa el ancho y la altura necesaria según su contenido dentro -->
+<span>  </span>
+
+<!-- ETIQUETA PARA LISTAS -->
+<!-- Lista ordenada: -->
+<ol>
+    <li>Item 1</li>
+    <li>Item 2</li>
+</ol>
+
+<!-- Lista desordenada: -->
+<ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+</ul>
+
+<!-- ETIQUETAS PARA TABLAS -->
+<!-- Las tablas tienen varias etiquetas dependiendo de la parte que queremos representar: -->
+<!-- Etiqueta raiz: -->
+<table>
+    <!-- Etiqueta para la cabecera de la tabla -->
+    <thead>
+        <!-- Etiqueta para agregar una linea -->
+        <tr>
+            <!-- Etiqueta para agregar items en la cabecera -->
+            <th>Item 1 de la cabecera</th>
+            <th>Item 2 de la cabecera</th>
+            <th>Item 3 de la cabecera</th>
+        </tr>
+    </thead>
+    <!-- Etiqueta para el cuerpo de la tabla -->
+    <tbody>
+        <!-- Etiqueta para agregar una linea -->
+        <tr>
+            <!-- Etiqueta para agregar items en el cuerpo -->
+            <td>Item 1 del cuerpo</td>
+            <td>Item 2 del cuerpo</td>
+            <td>Item 3 del cuerpo</td>
+        </tr>
+        <!-- Etiqueta para agregar una linea -->
+        <tr>
+            <!-- Etiqueta para agregar items en el cuerpo -->
+            <td>Item 4 del cuerpo</td>
+            <td>Item 5 del cuerpo</td>
+            <td>Item 6 del cuerpo</td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- ETIQUETAS <strong> y <em> -->
+<!-- Sirven para que el texto quede en negrita y en italica -->
+<p>Lorem ipsum <strong>dolor</strong> sit amet consectetur adipisicing elit.</p>
+<p>Lorem ipsum dolor sit amet <em>consectetur</em> adipisicing elit.</p>
+
+<!-- ETIQUETA PARA FORMULARIOS -->
+<!-- Etiqueta principal: -->
+<form action="definir donde se envia el contenido del formulario" method="definir el metodo GET/POST">
+    <!-- Etiqueta para definir una agrupación: -->
+    <fieldset>
+        <!-- Titulo de la agrupación -->
+        <legend>Titulo de la agrupación</legend>
+        <!-- Titulo del input que le sigue -->
+        <label for="nombre del label"></label>
+        <!-- Información que se le pide al usuario en ese campo -->
+        <input type="tipo de la información" name="nombre del input">
+    </fieldset>
+
+    <fieldset>
+        <!-- Agrega una caja donde el usuario puede escribir su pregunta -->
+        <textarea name="nombre" id="" cols="30" rows="10"></textarea>
+        <!-- Agrega un botón para enviar el formulario finalizado -->
+        <button type="submit"></button>
+    </fieldset>
+</form>
+
+<!-- DIFERENTES TIPOS DE INPUT -->
+<input type="text">
+<input type="email">
+<input type="number">
+<input type="date">
+
+<!-- VALIDACIÓN DE FORMULARIOS -->
+<!-- Campo es obligatorio: -->
+<input type="text" required>
+
+<!-- Mínimo y máximo de caracteres: -->
+<input type="text" minlength="5" maxlength="20">
+
+<!-- Mínimo y máximo de caracteres numéricos: -->
+<input type="text" min="5" max="20">
+
+<!-- Validación por patrón: -->
+<input type="text" pattern="[A-Za-z0-9]">
+
+<!-- Pattern común para password: -->
+<!-- REQUIERE: Minimo 8 caracteres, 1 o más caracteres minuscula, mayuscula y numérico -->
+<input type="text" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">

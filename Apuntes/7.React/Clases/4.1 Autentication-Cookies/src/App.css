@@ -1,0 +1,89 @@
+/* HEADER */
+header{
+  background-color: #C8A2C8;
+  height: 60px;
+  padding: 0;
+  margin: 0;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  margin: 0 50px;
+  padding: 0;
+}
+
+header li {
+  margin-right: 30px;
+  height: fit-content;
+}
+
+.link {
+  text-decoration: none;
+  color: #111111;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.link:hover {
+  color: white;
+  transition: 0.5s;
+}
+
+/* MAIN */
+main {
+  margin: 0 70px;
+}
+
+/* FOOTER */
+footer {
+  background-color: #C8A2C8;
+  height: 60px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.cookie-ask {
+  background-color: #c373c3;
+  position: fixed;
+  height: auto;
+  bottom: 60px;
+  width: 100%;
+}
+
+.cookie-content {
+  background-color: #c373c3;
+  text-align: center;
+  width: 800px;
+  margin: 0 auto;
+  padding: 2px 0 10px 0;
+}
+
+.cookie-content h3 {
+  line-height: 5px;
+}
+
+.cookie-button {
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: none;
+  height: 30px;
+  width: 100px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.cookie-button:hover {
+  font-weight: bold;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  font-size: 12px;
+}

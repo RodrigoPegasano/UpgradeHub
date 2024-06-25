@@ -1,0 +1,65 @@
+<!-- Ejercicio 1 - Issuu website -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Nombre de la página web -->
+    <title>Issuu</title>
+    <!-- Logo que aparece en la pestaña del navegador -->
+    <link rel="icon" href="../../S2-Ejercicios/Ejercicio1/Images/issuu-logo-symbol.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Header/navegador de la página web -->
+    <header style="border-bottom: 2px solid rgba(128, 128, 128, 0.5); padding-bottom: 10px; margin-bottom: 100px;">
+        <nav>
+            <span>
+                <img width="100px" src="../../S2-Ejercicios/Ejercicio1/Images/issuu-logo.png" alt="">
+            </span>
+            <span>
+                Already a user? <a href="">Sign in</a>
+            </span>
+        </nav>
+    </header>
+
+    <!-- Formulario para crear cuenta -->
+    <main style="margin-left: 100px; margin-right: 100px;">
+        <div>
+            <h2>Create an Issuu Account.</h2>
+
+            <!-- Opciones de crear usuario con Google o Facebook -->
+            <div>
+                <a href=""><img width="20px" src="../../S2-Ejercicios/Ejercicio1/Images/google-logo.png" alt="Google logo"> Sign in with Google</a>
+            </div>
+            <div>
+                <a href=""><img width="20px" src="../../S2-Ejercicios/Ejercicio1/Images/facebook-logo.png" alt="Facebook logo"> Continue with Facebook</a>
+            </div>
+
+            <h4>Or with email</h4>
+
+            <!-- Formulario -->
+            <form action="">
+                <label for="email">Email</label><br>
+                <input type="email" name="email" id="email"><br><br>
+
+                <label for="password">Password</label><br>
+                <input type="password" name="password" id="password"><br><br>
+
+                <input type="checkbox" name="privacy" id="privacy">
+                <label for="privacy">I accept the <a href="">Terms of Service</a> and the <a href="">Professional Terms of Service</a>.</label><br><br>
+
+                <button type="submit">CREATE ACCOUNT</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer de la página web -->
+    <footer style="border-top: 2px solid rgba(128, 128, 128, 0.5); padding-top: 10px; margin-top: 190px;">
+        <span>Issuu Inc.</span>
+        <span><a href="">Terms</a></span>
+        <span><a href="">Privacy</a></span>
+        <span><a href="">DMCA</a></span>
+    </footer>
+</body>
+</html>

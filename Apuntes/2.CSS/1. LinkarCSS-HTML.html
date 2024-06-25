@@ -1,0 +1,30 @@
+<!-- Existen 3 formas de linkar nuestro archivo CSS a nuestra página HTML: -->
+
+<!-- Método 1 (EVITAR) -->
+<p style="background-color: blue;">Esto es un párrafo</p>
+
+<!-- Método 2 (EVITAR) -->
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        p {
+            background-color: blueviolet;
+        }
+
+    </style>
+
+</head>
+
+<!-- Método 3 (RECOMENDADO) -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Agregar la siguiente etiqueta con la ruta al archivo css -->
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>

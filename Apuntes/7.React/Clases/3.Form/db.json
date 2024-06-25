@@ -1,0 +1,28 @@
+{
+  "peliculas": [
+    {
+      "id": "ae2f",
+      "descripcion": "Troya",
+      "foto": "https://www.caratulasylogos.com/wp-content/uploads/troya-1-640x480.jpg.",
+      "year": "2024"
+    },
+    {
+      "id": "45fd",
+      "descripcion": "The Amazing Spider Man",
+      "foto": "https://www.caratulasylogos.com/wp-content/uploads/the_amazing_spider-man-640x480.jpeg",
+      "year": "2002"
+    },
+    {
+      "id": "e526",
+      "descripcion": "Batman Begins",
+      "foto": "https://www.caratulasylogos.com/wp-content/uploads/batman_begins-640x480.jpg",
+      "year": "1964"
+    },
+    {
+      "id": "77b0",
+      "descripcion": "Toy Story 2",
+      "foto": "https://www.caratulasylogos.com/wp-content/uploads/toy_story_2-640x480.jpg",
+      "year": "1998"
+    }
+  ]
+}

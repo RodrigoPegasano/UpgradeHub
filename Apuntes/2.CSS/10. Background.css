@@ -1,0 +1,53 @@
+/* Propiedades para cambiar el fondo de algún elemento */
+
+/* 1. BACKGROUND */
+/* Todas las propiedades de background en una única linea */
+div {
+    background: yellow;
+}
+
+/* 2. BACKGROUND-IMAGE */
+/* Agrega una imagen de fondo */
+div {
+    background-image: url("Ruta de la imagen");
+}
+
+/* 3. BACKGROUND-SIZE */
+/* Especifica el tamaño de la imagen de fondo */
+div {
+    background-size: 50%;
+}
+
+/* 4. BACKGROUND-POSITION */
+/* Establece la posición inicial de la imagen de fondo */
+div {
+    background-position: 0px;
+}
+
+/* 5. BACKGROUND-REPEAT */
+/* Establece cómo se repetirá una imagen de fondo */
+div {
+    background-repeat: round;
+}
+
+/* 6. BACKGROUND-COLOR */
+/* Establece el color de fondo */
+div {
+    background-color: blueviolet;
+}
+
+/* 7. BACKGROUND-ATTACHMENT */
+/* Establece si la imagen de fondo es fija o se mueve con la página */
+div {
+    background-attachment: scroll;
+}
+
+/* MOSTRANDO UNA IMAGEN CUADRADA CUANDO LA IMAGEN NO LO ES */
+div.imagen-cuadrada {
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    background-image: url("Ruta de la imagen");
+    background-position: center;
+    background-size: cover;
+}

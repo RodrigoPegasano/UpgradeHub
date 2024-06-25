@@ -1,0 +1,40 @@
+.crear-usuario {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.crear-usuario-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+.crear-usuario-form input {
+    height: 40px;
+    margin: 0 10px 20px 10px;
+    border-radius: 8px;
+    border: 1px solid black;
+    padding-left: 10px;
+}
+
+.crear-usuario-form button {
+    border-radius: 8px;
+    font-size: 20px;
+    height: 50px;
+    margin: 0 10px;
+    border: 1px solid black;
+}
+
+.crear-usuario-form button:hover {
+    cursor: pointer;
+    background-color: #c373c3;
+    transition: 0.5s;
+}
+
+.password-error {
+    font-size: 11px;
+    font-weight: bold;
+    color: red;
+}
+

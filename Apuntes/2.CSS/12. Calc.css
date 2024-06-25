@@ -1,0 +1,29 @@
+/* Permite realizar cálculos al especificar los valores de las propiedades CSS. */
+
+/* EJEMPLO: */
+.div {
+    width: calc(100% - 80px);
+}
+/* El ejemplo arriba dice que el div debe ocupar 100% del tamaño menos 80px (esos 80px pueden ser el margen: 40px left y 40px right) */
+
+/* La función calc() acepta los siguientes operadores: */
+
+/* 1. SUMA (+) */
+.elemento {
+    width: calc(valor1 + valor2);
+}
+
+/* 2. RESTA (-) */
+.elemento {
+    width: calc(valor1 - valor2);
+}
+
+/* 3. MULTIPLICACIÓN (*) */
+.elemento {
+    width: calc(valor1 * valor2);
+}
+
+/* 4. DIVISIÓN */
+.elemento {
+    width: calc(valor1 / valor2);
+}

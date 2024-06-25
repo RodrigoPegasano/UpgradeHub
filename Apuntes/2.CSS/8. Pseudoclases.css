@@ -1,0 +1,32 @@
+/* Aplican diferentes estilos dependiendo del estado del elemento */
+
+/* 1. LINK */
+/* Se aplica a enlaces que aún no fueron visitados */
+.elemento:link {
+    color: red;
+}
+
+/* 2. VISITED */
+/* Se aplica a enlaces que ya fueron visitados */
+.elemento:visited {
+    color: blueviolet;
+}
+
+/* 3. HOVER */
+/* Aplica estilo cuando un usuario pasa el mouse por arriba del elemento */
+.elemento:hover {
+    color: brown;
+}
+
+/* 4. ACTIVE */
+/* Aplica estilo cuando un elemento es activado por el usuario */
+.elemento:active {
+    color: chartreuse;
+}
+
+/* 5. FOCUS */
+/* Aplica estilo cuando queremos foco en un elemento */
+/* MUY ÚTIL PARA PERSONAS CON MOVILIDAD */
+.elemento:focus {
+    color: darkcyan;
+}

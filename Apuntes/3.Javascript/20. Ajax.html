@@ -1,0 +1,40 @@
+<!-- PARA VER UN EJERCICIO COMPLETO: CARPETA "5. Extra" > "5. Ajax" -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        "use strict"; // Nos deja hacer lo que nos de la gana pero con algunas restricciones
+                      // Ejemplo: Si duplicamos variales, si no declaramos variables antes de utilizarlas,
+                      // si en una función o objeto pasamos parametros similares o si intentamos editar objetos protegidos.
+
+        // Clase que va a gestionar nuestras peticiones ajax
+        var request = new XMLHttpRequest();
+
+        // Variable
+        var country = "spain";
+
+        // Petición
+        // Primer param: Tipo de petición
+        // Segundo param: URL que queremos atacar
+        request.open("GET", `https://restcountries.com/v3.1/name/${country}`);
+
+        request.addEventListener("load", function () {
+            // Devuelve una respuesta en referencia al objeto "request". La convierte a JSON con el método parse y la guarda en la constante "data"
+            const data = JSON.parse(this.response);
+            console.log(data);
+        })
+
+        request.send();
+    </script>
+
+</body>
+
+</html>

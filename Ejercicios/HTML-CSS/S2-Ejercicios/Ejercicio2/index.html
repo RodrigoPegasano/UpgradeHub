@@ -1,0 +1,68 @@
+<!-- Ejercicio 2 - Mailchimp website -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Ejercicio2/style.css">
+    <!-- Nombre de la página web -->
+    <title>Mailchimp</title>
+    <!-- Logo de la pestaña del navegador -->
+    <link rel="icon" href="../../S2-Ejercicios/Ejercicio2/Images/Mailchimp-logo.svg" type="image/x-icon">
+</head>
+
+<body>
+    <div class="all">
+        <div class="logo">
+            <img class="logo-size" src="../../S2-Ejercicios/Ejercicio2/Images/Mailchimp-logo.svg" alt="Mailchimp-logo">
+        </div>
+        <div>
+            <h1>Welcome to Mailchimp</h1>
+            <p class="intro">Find your people. Engage your customers. Build your brand. Do it all with Mailchimp's Marketing Platform. Already have an account? <a href="">Log in</a></p>
+
+            <!-- FORMULARIO -->
+            <form action="">
+                <label class="label-bold" for="email">Email</label><br>
+                <input class="input-info" type="email" name="email" id="email" required><br><br>
+
+                <label class="label-bold" for="username">Username</label><br>
+                <input class="input-info" type="text" name="username" id="username" required><br><br>
+
+                <label class="label-bold" for="password">Password</label><br>
+                <input class="input-info" type="password" name="password" id="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+
+                <!-- LISTA COSAS OBLIGATORIAS EN LA CONTRASEÑA -->
+                <div class="list">
+                    <div>
+                        <ul>
+                            <li><span>One lowercase character</span></li>
+                            <li><span>One uppercase character</span></li>
+                            <li><span>One number</span></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><span>One special character</span></li>
+                            <li><span>8 characters minimum</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <br>
+
+                <!-- BUTTON AND SUBSCRIBE TO MARKETING EMAILS -->
+                <div class="submit-button">
+                        <button class="button-size" type="submit">Sign Up</button>
+                        <input class="checkbox-size" type="checkbox" name="terms" id="terms">
+                        <label class="label-checkbox" for="terms">I don't want to receive email about new Mailchimp products, best practices, or special offers.</label>
+                </div>
+            </form>
+
+            <!-- TERMS AND CONDITIONS -->
+            <div class="terms-and-privacy">
+                <p>By clicking the "Sign Up" button, you are creating a Mailchimp account, and you agree to Mailchimp's <a href="">Terms of Use</a> and <a href="">Privacy Policy</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

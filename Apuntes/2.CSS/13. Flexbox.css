@@ -1,0 +1,114 @@
+/* Flexbox tiene como objetivo ayudar a diseñar, alinear y distribuir el espacio entre los elementos de un contenedor */
+
+/* Primero debemos agregar el display: flex al contenedor padre: */
+.ContenedorPadre {
+    display: flex;
+}
+/* ¡IMPORTANTE! Por defecto, todos los elementos flex intentarán encajar en la misma fila. */
+
+
+/* PROPIEDADES DEL PADRE: */
+
+/* 1. FLEX-DIRECTION */
+/* Establece la dirección en la que coloca los hijos flexibles */
+.padre {
+    flex-direction: row;
+    flex-direction: row-reverse;
+    flex-direction: column;
+    flex-direction: column-reverse;
+}
+
+/* 2. FLEX-WRAP */
+/* Permiten que los hijos se ajusten a la linea según sea necesario (por ejemplo, rompe la linea o no) */
+.padre {
+    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
+}
+
+/* 3. JUSTIFY-CONTENT */
+/* Define la alineación de los hijos en el eje principal */
+.padre {
+    justify-content: flex-start;
+    justify-content: flex-end;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;
+    justify-content: space-evenly;
+}
+
+/* 4. ALIGN-ITEMS */
+/* Define la alineación de los hijos en el eje secundario */
+.padre {
+    align-items: flex-start;
+    align-items: flex-end;
+    align-items: center;
+    align-items: stretch;
+    align-items: baseline;
+}
+
+/* 5. ALIGN-CONTENT */
+/* Alinea las lineas de un contenedor flexible cuando hay espacio extra en el eje secundario */
+.padre {
+    align-content: flex-start;
+    align-content: flex-end;
+    align-content: center;
+    align-content: stretch;
+    align-content: space-between;
+    align-content: space-around;
+}
+
+/* PROPIEDADES DEL HIJO */
+
+/* 1. ORDER */
+/* Controla el orden en el que aparecen en el contenedor */
+.hijo {
+    order: 2;
+}
+
+/* 2. FLEX-GROW */
+/* Define la capacidad de que un hijo cresca. Es decir, si uno de los hijos tiene valor 2, ese será mayor que todos los otros */
+/* EL VALOR POR DEFECTO ES 0 */
+.hijo {
+    flex-grow: 1;
+}
+
+/* 3. FLEX-SHRINK */
+/* Define la capacidad de que un hijo sea menor */
+/* EL VALOR POR DEFECTO ES 1 */
+.hijo {
+    flex-shrink: 3;
+}
+
+/* 4. FLEX-BASIS */
+/* Define el tamaño predeterminado de un elemento antes de distribuir el espacio restante */
+.hijo {
+    flex-basis: 0;
+    flex-basis: auto;
+    flex-basis: 100px;
+    flex-basis: 10%;
+}
+
+/* 5. FLEX */
+/* Tiene las propiedades flex-grow, flex-shrink y flex-basis en uno solo */
+/* VALORES POR DEFECTO: 0 1 auto */
+.hijo {
+    flex: 0 1 auto;
+}
+
+/* 6. ALIGN-SELF */
+/* Permite que la alineación predeterminada se anule para los elementos flex individuales */
+.hijo {
+    align-self: auto;
+    align-self: flex-start;
+    align-self: flex-end;
+    align-self: center;
+    align-self: baseline;
+    align-self: stretch;
+}
+
+/* PARA MÁS INFORMACIÓN SOBRE FLEXBOX Y LOS PARÁMETROS PADRE E HIJO: https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
+
+/* JUEGOS PARA PRATICAR: */
+/* 1. FLEXBOX FROGGY: https://flexboxfroggy.com/#es */
+/* 2. FLEXBOX DEFENSE: http://www.flexboxdefense.com/ */

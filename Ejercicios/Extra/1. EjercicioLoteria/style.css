@@ -1,0 +1,32 @@
+#card {
+    /* Margin: auto - Se utiliza para centrar cualquier div */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 50%;
+    background-color: #cacaca;
+}
+
+#button-container {
+    height: 50px;
+}
+
+a {
+    border-radius: 5px;
+    padding: 10px 25px 10px 25px;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 900;
+    color: white;
+}
+
+a:nth-child(1) {
+    background-color: green;
+}
+
+a:nth-child(2) {
+    background-color: red;
+}

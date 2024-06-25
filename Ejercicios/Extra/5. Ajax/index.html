@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX REQUEST</title>
+
+    <!-- Estilos CSS -->
+    <style>
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: inherit;
+        }
+
+        html {
+            font-size: 62.5%;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui;
+            color: #555;
+            background-color: #f7f7f7;
+            min-height: 100vh;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+        }
+
+        .countries {
+            /* margin-bottom: 8rem; */
+            display: flex;
+
+            font-size: 2rem;
+            opacity: 0;
+            transition: opacity 1s;
+        }
+
+        .country {
+            background-color: #fff;
+            box-shadow: 0 2rem 5rem 1rem rgba(0, 0, 0, 0.1);
+            font-size: 1.8rem;
+            width: 30rem;
+            border-radius: 0.7rem;
+            margin: 0 3rem;
+            /* overflow: hidden; */
+        }
+
+        .neighbour::before {
+            content: 'Neighbour country';
+            width: 100%;
+            position: absolute;
+            top: -4rem;
+
+            text-align: center;
+            font-size: 1.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: #888;
+        }
+
+        .neighbour {
+            transform: scale(0.8) translateY(1rem);
+            margin-left: 0;
+        }
+
+        .country-img {
+            width: 30rem;
+            height: 17rem;
+            object-fit: cover;
+            background-color: #eee;
+            border-top-left-radius: 0.7rem;
+            border-top-right-radius: 0.7rem;
+        }
+
+        .country-data {
+            padding: 2.5rem 3.75rem 3rem 3.75rem;
+        }
+
+        .country-name {
+            font-size: 2.7rem;
+            margin-bottom: 0.7rem;
+        }
+
+        .country-region {
+            font-size: 1.4rem;
+            margin-bottom: 2.5rem;
+            text-transform: uppercase;
+            color: #888;
+        }
+
+        .country-row:not(:last-child) {
+            margin-bottom: 1rem;
+        }
+
+        .country-row span {
+            display: inline-block;
+            margin-right: 2rem;
+            font-size: 2.4rem;
+        }
+
+        .btn-country {
+            border: none;
+            font-size: 2rem;
+            padding: 2rem 5rem;
+            border-radius: 0.7rem;
+            color: white;
+            background-color: orangered;
+            cursor: pointer;
+        }
+
+        .images {
+            display: flex;
+        }
+
+        .images img {
+            display: block;
+            width: 80rem;
+            margin: 4rem;
+        }
+
+        .images img.parallel {
+            width: 40rem;
+            margin: 2rem;
+            border: 3rem solid white;
+            box-shadow: 0 2rem 5rem 1rem rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Contenido HTML -->
+    <main class="container">
+        <div class="countries">
+
+        </div>
+    </main>
+
+    <!-- Archivo JavaScript con Ajax -->
+    <script>
+        const countriesContainer = document.querySelector('.countries');
+
+        const addCard = (country = "spain") => {
+            var request = new XMLHttpRequest();
+            request.open('GET', `https://restcountries.com/v3.1/name/${country}`); // 1. elegimos pizza.
+            request.addEventListener('load', function () {
+                const [data] = JSON.parse(this.response);
+                console.log(data);
+
+                if (data) {
+                    const htmlStr = `
+                    <article class="country">
+                        <img class="country-img" src="${data.flags.png}">
+                        <div class="country-data">
+                            <h3 class="country-name">${data.name.common}</h3>
+                            <h4 class="country-region">${data.region}</h4>
+                            <p class="country-row"><span>&#128107;</span>${formatNumberEs(data.population)}</p>
+                            <p class="country-row"><span>&#128483;</span>${ /* getLang(data.languages) */ data.languages[Object.keys(data.languages)[0]]}</p>
+                            <p class="country-row"><span>&#128176;</span>${data.currencies[Object.keys(data.currencies)[0]].name}</p>
+                        </div>
+                    </article>`;
+
+                    /* Como lo que no tenemos arriba es un nodo, debemos utilizar otra propiedad para agregarlo al HTML */
+                    /* El "beforeend" significa: justo dentro del elemento */
+                    countriesContainer.insertAdjacentHTML('beforeend', htmlStr);
+                    countriesContainer.style.opacity = 1;
+                }
+
+            });
+
+            const formatNumberEs = number => number.toLocaleString(
+                'es-ES',
+                { style: 'decimal', useGrouping: true, minimumFractionDigits: 0 }
+            );
+
+            /* // altenativa para renderizar los datos de languages.
+            const getLang = (languages) => {
+                for (lang in languages) {
+                return languages[lang];
+                            }
+            }
+            // getLang(data.languages) */
+
+            request.send(); // 2. encargamos la pizza.
+        }
+
+        addCard();
+
+    </script>
+</body>
+
+</html>

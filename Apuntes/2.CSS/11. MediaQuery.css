@@ -1,0 +1,47 @@
+/* Se utilizan para decirle a nuestro CSS que aplique determinados estilos apenas en determinados tamaños de pantalla */
+
+/* 1. Agregar dentro del <head> en el archivo HTML el siguiente <meta>: */
+/* <meta name="viewport" content="width=device-width, initial-scale=1.0"> */
+
+/* 2. En nuestro CSS ya podemos incluir las media queries de diferente maneras: */
+
+/* EJEMPLO BÁSICO */
+@media screen and (min-width: 480px) {
+    p {
+        font-size: 25px;
+    }
+}
+
+/* EJEMPLO MOBILE-FIRST (RECOMENDADO) */
+/* Reglas por defecto (mobile) */
+p {
+    font-size: 12px;
+}
+
+/* Resto de reglas en orden creciente */
+@media (min-width: 576px) {
+    p {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 768px) {
+    p {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 992px) {
+    p {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1200px) {
+    p {
+        font-size: 24px;
+    }
+}
+
+/* MÁS INFORMACIÓN SOBRE MEDIA QUERIES: https://css-tricks.com/css-media-queries/ */
+/* IMAGEN CON LOS TAMAÑOS PARA CADA PANTALLA: EJEMPLOS > IMAGENES > MEDIA QUERY */

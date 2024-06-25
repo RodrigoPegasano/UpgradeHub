@@ -1,0 +1,85 @@
+/* Existen diferentes maneras de agregar estilos: */
+
+/* SEECTORES BÁSICOS */
+
+/* 1. SELECTORES POR ETIQUETAS */
+h1 {
+    background-color: aqua;
+}
+
+p {
+    padding: 10px;
+    font-size: 15px;
+}
+
+/* 2. SELECTORES POR CLASE (.) */
+.clase1 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.clase2 {
+    background-color: azure;
+}
+
+/* 3. SELECTORES POR ID (#) */
+#id-1 {
+    border: 1px solid blue;
+}
+
+#id-2 {
+    background-color: crimson;
+    font-size: 20px;
+}
+
+/* 4. SELECTORES MÚLTIPLES */
+/* Aplica el estilo a todo lo que sea un párrafo (p) y todo lo que sea un enlace (a) con la clase "estilo1" */
+p, a.estilo1 {
+    color: red;
+}
+
+/* 5. SELECTORES POR RELACIÓN */
+/* Aplica el estilo a todo lo que sea un párrafo (p) que esté dentro del footer */
+footer p {
+    margin: 20px;
+}
+
+/* SELECTORES AVANZADOS */
+
+/* 1. */
+div > p {
+    color: red;
+}
+/* Aplica a todos los párrafos (p) que estén directamente conectados a un div */
+
+/* 2. */
+.hola + .adios {
+    color: blanchedalmond;
+}
+/* Aplica al elemento que tenga la clase "adios" y venga justo después del que tenga la clase "hola" */
+
+/* 3. */
+.hola ~ .adios {
+    color: darkgreen;
+}
+/* Aplica a todos los elementos que tengan la clase "adios" y vengan después del que tenga la clase "hola" */
+
+/* 4. */
+* .especial {
+    color: black;
+}
+/* Aplica a todos los elementos que tengan la clase "especial" */
+
+/* 5. */
+div .especial {
+    color: cyan;
+}
+/* Aplica a todos los elementos que tengan la clase "especial" y estén dentro de un div */
+
+/* 6. */
+.especial.inline {
+    color: aliceblue;
+}
+/* Aplica a todos los elementos que tengan la clase "especial" y la clase "inline" */
+
+
+/* MÁS TIPOS DE SELECTORES AVANZADOS: https://www.w3schools.com/cssref/css_selectors.php */

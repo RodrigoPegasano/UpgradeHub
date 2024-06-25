@@ -1,0 +1,19 @@
+<h1>Contador: {{ contador }}</h1>
+
+<!-- Con las funciones creadas -->
+<div>
+    <h3>Con las funciones</h3>
+
+    <button (click)="sumar()">{{ textoBotonSumar }}</button>
+    <button (click)="restar()">{{ textoBotonRestar }}</button>
+    <button (click)="restart()">Restart</button>
+</div>
+
+<!-- Sin las funciones -->
+<div>
+    <h3>Sin las funciones</h3>
+
+    <button (click)="contador = contador + 1">{{ textoBotonSumar }}</button>
+    <button (click)="contador = contador - 1">{{ textoBotonRestar }}</button>
+    <button (click)="contador = 0">Restart</button>
+</div>

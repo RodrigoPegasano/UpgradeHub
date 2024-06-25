@@ -1,0 +1,13 @@
+/* Aplica estilos a ciertas partes de nuestro HTML */
+
+/* 1. BEFORE */
+/* Agrega un pseudoelemento al principio del elemento seleccionado */
+selector ::before {
+    content: "Contenido";
+}
+
+/* 2. AFTER */
+/* Agrega un pseudoelemento al final del elemento seleccionado */
+selector ::after {
+    content: "Contenido";
+}

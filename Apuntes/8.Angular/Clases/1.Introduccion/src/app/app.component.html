@@ -1,0 +1,13 @@
+<main class="main">
+    <!-- Contadores con diferentes colores -->
+    <app-contador class="contador-blue" (onLimiteAlcanzado)="limiteAlcanzado($event)" [textoBotonSumar]="'Sumar'" [textoBotonRestar]="'Restar'"></app-contador>
+    <app-contador class="contador-red" (onLimiteAlcanzado)="limiteAlcanzado($event)"></app-contador>
+
+    <br>
+
+    <input type="text" [(ngModel)]="variable">
+    <h2>Texto escrito: {{variable}}</h2>
+
+</main>
+
+<router-outlet />

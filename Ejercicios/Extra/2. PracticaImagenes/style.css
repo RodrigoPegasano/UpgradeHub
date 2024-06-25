@@ -1,0 +1,19 @@
+#card-container {
+    border: 1px solid gray;
+    margin: 0 auto;
+    width: 1200px;
+    height: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    border: 1px solid gray;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 10px;
+}

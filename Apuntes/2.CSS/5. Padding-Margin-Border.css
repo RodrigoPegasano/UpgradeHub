@@ -1,0 +1,27 @@
+/* Nuestros componentes están dentro de cajas. Por lo tanto, podemos editar
+relación con en resto de la página y/o de la propia caja con su contenido */
+
+/* 1. BORDER */
+/* Es el borde de la caja */
+div {
+    border: 5px solid blueviolet;
+}
+
+/* 2. PADDING */
+/* Es el espacio desde el borde hacia el interior de la caja */
+div {
+    padding: 10px;
+}
+
+/* 3. MARGIN */
+/* Es el espacio desde el borde hacia el exterior de la caja */
+div {
+    margin: 10px;
+}
+
+/* EJEMPLO COMPLETO */
+div.estilo1 {
+    border: 1px solid black;
+    padding: 10px 30px 10px 30px;
+    margin: 20px 0px 20px 0px;
+}

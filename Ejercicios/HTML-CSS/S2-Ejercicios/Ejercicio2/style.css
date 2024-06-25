@@ -1,0 +1,80 @@
+/* TODO EL CONTENIDO DEL BODY */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px 490px 0px 290px;
+}
+
+/* LOGO DE LA PÁGINA */
+.logo {
+    padding-top: 45px;
+    padding-right: 45px;
+}
+
+.logo-size {
+    width: 200px;
+}
+
+/* FORMULARIO */
+.all {
+    display: flex;
+}
+
+.label-bold {
+    font-weight: 600;
+}
+
+.input-info {
+    width: 95%;
+    height: 30px;
+    margin-top: 10px;
+}
+
+/* LISTA */
+.list {
+    display: flex;
+}
+
+li {
+    color: rgb(40, 146, 170);
+}
+
+li span {
+    color: black;
+}
+
+/* BOTÓN DE SIGN UP Y TERMINOS A ACEPTAR */
+.submit-button {
+    /* border: 1px solid black; */
+    display: flex;
+}
+
+.button-size {
+    font-size: large;
+    color: rgba(0, 0, 0, 0.6);
+    height: 70px;
+    width: 400px;
+    margin-right: 10px;
+    background-color: white;
+    border: 0.5px solid rgba(0, 0, 0, 0.3);
+}
+
+.button-size:hover {
+    background-color: rgba(128, 128, 128, 0.2);
+}
+
+.checkbox-size {
+    width: 50px;
+    height: 50px;
+}
+
+.label-checkbox {
+    margin-left: 10px;
+}
+
+.terms-and-privacy {
+    margin-top: 40px;
+}
+
+.intro {
+    margin-bottom: 30px;
+}

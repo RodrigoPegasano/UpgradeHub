@@ -1,0 +1,41 @@
+/* CENTRADO HORIZONTAL */
+
+/* 1. Para elementos display: inline-block */
+div.padre1 {
+    text-align: center;
+}
+
+div.hijo1 {
+    display: inline-block;
+}
+
+/* 2. Para elementos display: block */
+div {
+    display: block;
+    margin: auto;
+}
+
+/* CENTRADO VERTICAL */
+
+/* 1. Podemos agregar margin-top y margin-bottom al elemento hijo */
+div.hijo {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+/* 2. Podemos agregar padding-top y padding-bottom al elemento padre */
+div.padre {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+/* CENTRADO VERTICAL Y HORIZONTAL */
+
+/* Al elemento padre le asignamos position: relative y al hijo position: absolute */
+div.padre {
+    position: relative;
+}
+
+div.hijo {
+    position: absolute;
+}

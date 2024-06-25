@@ -1,0 +1,28 @@
+/* Podemos utilizar diferentes fuentes en determinadas partes de nuestra página. Para eso, utilizamos las siguientes propiedades: */
+
+/* FUENTES BÁSICAS */
+
+/* 1. font-family */
+/* Indica el nombre de la fuente */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 2. font-weight */
+/* Indica el grosor de la fuente. Acepta valores entre 100 - 900 */
+body {
+    font-weight: 200;
+}
+
+/* 3. font-size */
+/* Indica el tamaño de la fuente */
+body {
+    font-size: 15px;
+}
+
+/* FUENTES AVANZADAS */
+/* En algunas páginas web podemos descargar fuentes para nuestra página. Por ejemplo: Google Fonts */
+@font-face {
+    font-family: "Le damos un nombre a nuestra fuente";
+    src: url('Agregamos la ruta a nuestra fuente');
+}
